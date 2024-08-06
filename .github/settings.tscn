@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://daq60y5vjqack"]
+[gd_scene load_steps=2 format=3 uid="uid://daq60y5vjqack"]
+
+[ext_resource type="Script" path="res://settings.gd" id="1_c7ew0"]
 
 [node name="Settings" type="Node2D"]
+script = ExtResource("1_c7ew0")
+
+[node name="Main Menu" type="Button" parent="."]
+offset_left = 489.0
+offset_top = 552.0
+offset_right = 665.0
+offset_bottom = 647.0
+text = "Main Menu
+"
+
+[connection signal="pressed" from="Main Menu" to="." method="_on_main_menu_pressed"]
